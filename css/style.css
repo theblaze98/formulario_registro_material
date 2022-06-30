@@ -28,7 +28,8 @@ body {
 /* Estilos del Formulario */
 
 .wrap {
-    width: 50%;
+    width: 90%;
+    max-width: 500px;
     margin: 15px auto;
     box-shadow: 0 0 10px 5px #e1e1e1;
     padding: 30px;
@@ -183,10 +184,4 @@ button[type="submit"]:hover {
 
 button[type="submit"]:active {
     background: #7158ff;
-}
-
-@media screen and (min-width: 320px) {
-    #formulario {
-        width: 100%;
-    }
 }
