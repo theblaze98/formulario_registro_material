@@ -1,0 +1,192 @@
+/* Variables */
+
+:root {
+    --color-secundary: ;
+    --color-placeholder: #d1d1d1;
+    --error: #fc5959;
+
+}
+
+/* Estilos Universales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del body */
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', Arial, serif;
+    width: 100%;
+    background: #f1f1f1;
+    border-top: 30px solid #7158ff;
+}
+
+/* Estilos del Formulario */
+
+.wrap {
+    width: 50%;
+    margin: 15px auto;
+    box-shadow: 0 0 10px 5px #e1e1e1;
+    padding: 30px;
+    background: #fff;
+}
+
+.wrap #formulario {
+    width: 100%;
+}
+
+.wrap #formulario .input-group {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrap #formulario .input-group input[type="text"],
+.wrap #formulario .input-group input[type="email"],
+.wrap #formulario .input-group input[type="password"] {
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    border: none;
+    border-bottom: 2px solid #baaff9;
+    padding: 10px;
+    transition: all .2s ease;
+}
+
+.wrap #formulario .input-group input[type="text"]:hover,
+.wrap #formulario .input-group input[type="email"]:hover,
+.wrap #formulario .input-group input[type="password"]:hover {
+    border-color: #7158ff;
+}
+
+.wrap #formulario .input-group input[type="text"]:focus,
+.wrap #formulario .input-group input[type="email"]:focus,
+.wrap #formulario .input-group input[type="password"]:focus {
+    border-color: #7158ff;
+}
+
+.wrap #formulario .input-group.active label {
+    font-size: 12px;
+    top: 0;
+    left: 10px;
+}
+
+.wrap #formulario .input-group.error input[type="text"],
+.wrap #formulario .input-group.error input[type="email"],
+.wrap #formulario .input-group.error input[type="password"] {
+    border-color: #fc5959;
+}
+
+.wrap #formulario .input-group.error label {
+    color: #fc5959;
+}
+
+.wrap #formulario .input-group label {
+    font-size: 15px;
+    color: #ccc;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    cursor: text;
+    transition: all .5s ease;
+}
+
+.wrap #formulario .radio,
+.wrap #formulario .checkbox {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.wrap #formulario .radio input[type="radio"],
+.wrap #formulario .checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.wrap #formulario .radio label,
+.wrap #formulario .checkbox label {
+    color: #7158ff;
+    font-size: 20px;
+    padding: 5px 10px 5px 55px;
+    border-radius: 5px;
+    position: relative;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.wrap #formulario .radio label:hover,
+.wrap #formulario .checkbox label:hover {
+    background: #e1ddfa;
+}
+
+.wrap #formulario .radio label::before,
+.wrap #formulario .checkbox label::before {
+    content: "";
+    border: 3px solid #7158ff;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 17px;
+    border-radius: 50%;
+}
+
+.wrap #formulario .checkbox label::before {
+    border-radius: 4px;
+}
+
+.wrap #formulario .radio input[type="radio"]:checked + label,
+.wrap #formulario .checkbox input[type="checkbox"]:checked + label {
+    background: #7158ff;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.wrap #formulario .radio input[type="radio"]:checked + label::before,
+.wrap #formulario .checkbox input[type="checkbox"]:checked + label::before {
+    display: none;
+}
+
+.wrap #formulario .radio.error label,
+.wrap #formulario .checkbox.error label {
+    color: #fc5959;
+}
+
+.wrap #formulario .radio.error label:hover,
+.wrap #formulario .checkbox.error label:hover {
+    background: #ffd7d7;
+}
+
+.wrap #formulario .radio.error label::before,
+.wrap #formulario .checkbox.error label::before {
+    border-color: #fc5959;
+}
+
+button[type="submit"] {
+    width: 100%;
+    border: none;
+    background: #7158ff;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #a092f1;
+}
+
+button[type="submit"]:active {
+    background: #7158ff;
+}
+
+@media screen and (min-width: 320px) {
+    #formulario {
+        width: 100%;
+    }
+}
